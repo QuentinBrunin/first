@@ -10,4 +10,12 @@
     border: solid 3px black;
     text-align: center;
     padding-top: 5px;
+    transition: 0.25s;
+}
+
+.selected{
+    border: solid 4px rgb(212, 212, 7);
+    box-shadow: 0px 0px 5px rgb(212, 212, 7),
+                0px 0px 5px rgb(212, 212, 7);
+
 }

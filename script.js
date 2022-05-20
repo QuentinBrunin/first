@@ -19,16 +19,22 @@ var snare = new Audio('snare.wav');
 var tink = new Audio('tink.wav');
 var tom = new Audio('tom.wav');
 
+
+
 window.addEventListener('keyup', function(e){
     if (e.key === 'q') {
         boom.play();
         keyQ.classList.toggle('selected')
+        document.body.style.backgroundColor = 'red'
+        setTimeout(1000)
     } 
 })
+
 window.addEventListener('keyup', function(e){
     if (e.key === 's') {
         clap.play();
         keyS.classList.toggle('selected')
+        document.body.style.backgroundColor = 'lightgray'
     }
 })
 
@@ -36,6 +42,7 @@ window.addEventListener('keyup', function(e){
     if (e.key === 'd') {
         hihat.play();
         keyD.classList.toggle('selected')
+        document.body.style.backgroundColor = 'wheat'
     }
 })
 
@@ -43,6 +50,7 @@ window.addEventListener('keyup', function(e){
     if (e.key === 'f') {
         kick.play();
         keyF.classList.toggle('selected')
+        document.body.style.backgroundColor = 'lightblue'
     }
 })
 
@@ -50,6 +58,7 @@ window.addEventListener('keyup', function(e){
     if (e.key === 'g') {
         openhat.play();
         keyG.classList.toggle('selected')
+        document.body.style.backgroundColor = 'green'
     }
 })
 
@@ -57,6 +66,7 @@ window.addEventListener('keyup', function(e){
     if (e.key === 'h') {
         ride.play();
         keyH.classList.toggle('selected')
+        document.body.style.backgroundColor = 'blue'
     }
 })
 
@@ -64,6 +74,7 @@ window.addEventListener('keyup', function(e){
     if (e.key === 'j') {
         snare.play();
         keyJ.classList.toggle('selected')
+        document.body.style.backgroundColor = 'grey'
     }
 })
 
@@ -71,6 +82,7 @@ window.addEventListener('keyup', function(e){
     if (e.key === 'k') {
         tink.play();
         keyK.classList.toggle('selected')
+        document.body.style.backgroundColor = 'brown'
     }
 })
 
@@ -78,6 +90,7 @@ window.addEventListener('keyup', function(e){
     if (e.key === 'l') {
         tom.play();
         keyL.classList.toggle('selected')
+        document.body.style.backgroundColor = 'teal'
     }
 })
 
